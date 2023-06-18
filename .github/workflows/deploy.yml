@@ -16,11 +16,4 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::696709487679:role/gh-oidc
           aws-region: us-east-1
-      - name: Install dependencies
-        run: npm install -g aws-cdk
-      - name: Install required packages
-        run: pip install -r requirements.txt
-      - name: Synth stack
-        run: cdk synth
-      - name: Deploy stack
-        run: cdk deploy --all --require-approval never
+   
