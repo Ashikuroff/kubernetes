@@ -1,4 +1,4 @@
-on: [push, workflow_dispatch]
+on: [push, workflow_Dispatch]
 jobs:
   aws_cdk:
     permissions:
