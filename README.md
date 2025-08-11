@@ -13,30 +13,13 @@ This repository contains resources for deploying applications using Kubernetes. 
 
 ## Architecture Diagram
 
-Below is a simple architecture diagram illustrating the deployment flow:
+Below is a clear architecture diagram using Mermaid syntax:
 
-```
-+-------------------+
-|   User Request    |
-+-------------------+
-          |
-          v
-+-------------------+
-|  Kubernetes       |
-|  Service          |
-+-------------------+
-          |
-          v
-+-------------------+
-|  Kubernetes       |
-|  Deployment/Pod   |
-+-------------------+
-          |
-          v
-+-------------------+
-|   Docker Image    |
-| (entrypoint.sh)   |
-+-------------------+
+```mermaid
+flowchart TD
+    A[User Request] --> B[Kubernetes Service]
+    B --> C[Kubernetes Deployment/Pod]
+    C --> D[Docker Image (entrypoint.sh)]
 ```
 
 ## How to Deploy
