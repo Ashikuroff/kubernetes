@@ -19,7 +19,7 @@ Below is a clear architecture diagram using Mermaid syntax:
 flowchart TD
     A[User Request] --> B[Kubernetes Service]
     B --> C[Kubernetes Deployment/Pod]
-    C --> D[Docker Image (entrypoint.sh)]
+    C --> D[Docker Image]\n(entrypoint.sh)
 ```
 
 ## How to Deploy
